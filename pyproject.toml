@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "db-to-zod"
+version = "1.0.0"
+description = "Generate TypeScript types and runtime Zod validation schemas from SQL DDL and SQLite databases."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["cli","developer-tools"]
+
+[project.scripts]
+db-to-zod = "db_to_zod.cli:main"
+
+[tool.setuptools]
+packages = ["db_to_zod"]
